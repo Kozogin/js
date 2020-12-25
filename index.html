@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict"
+function makeBuffer() {
+	var index = 0;
+	var arrayBuffer = {};
+
+	return {
+		add: function(value){			
+			arrayBuffer[index] = value + "";
+			index++;
+		},
+		print: function(){
+			var allBuffer = '';
+			for (var i = 0; i < index; i++) {
+				allBuffer = allBuffer + arrayBuffer[i] + ' ';
+			}
+			return allBuffer;
+		},
+		clear: function(){
+			arrayBuffer = new Array('');
+			index = 0;			
+		}
+	}
+}
+
+
+
+var buffer = makeBuffer();
+
+buffer.add(0);
+buffer.add(1);
+buffer.add(0); 
+
+buffer.add( 'JavaScript');
+buffer.add( 'Вчити');
+buffer.add( 'Потрібно!');
+
+alert(buffer.print()); 
+
+buffer.clear();
+alert(buffer.print()); 
+
+buffer.add("Тест");
+buffer.add("тебе не з'їсть");
+alert(buffer.print()); // Тест тебе не з'їсть
+buffer.clear ();
+alert (buffer.print()); // "" 
+
+    </script>
+    
+</body>
+</html>
