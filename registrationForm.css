@@ -1,0 +1,30 @@
+@charset "UTF-8";
+body{
+	
+}
+div{
+	position:relative;
+	height: 250px;
+	width: 400px;
+	margin: auto;
+	margin-top: 100px;
+	background: #afa5ae;
+}
+
+input[type="text"]{
+	position: absolute;
+	right: 20px;
+	
+}
+label{	
+	position: absolute;
+	left: 20px;
+}
+
+.errNow{
+	background: #fa0;
+}
+
+.validationOK{
+	background: #0fa;
+}

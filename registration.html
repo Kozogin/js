@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="uk">
+<html>
+<head>
+ <meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="registrationForm.css">
+</head>
+<body>
+	<div>
+		<form id="user">
+		<br><br>
+			<label>Ім'я</label><input id="firstName" type="text"><br><br>
+			<label>Прізвище</label><input id="lastName" type="text"><br><br>
+			<label>Вік</label><input id="age" type="text"><br><br>
+			<label>Місце проживання</label><input id="address" type="text"><br><br>
+			
+			<input id="get" type="button" value="get send" onclick="sendDataByGetMethod()">
+			<input id="post" type="button" value="post send" onclick="sendDataByPostMethod()">
+			<script src="handlerForm.js"></script>
+		</form>
+	</div>
+</body>
+</html>
